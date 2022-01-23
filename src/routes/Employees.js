@@ -38,14 +38,14 @@ export default function Employees() {
         event.preventDefault();
         axios({
             method: 'post',
-            url: 'api/plan/add',
+            url: 'https://w-gym-the-lion-backend.herokuapp.com/api/plan/add',
             data: newemployees
         });
     }
     function handleClickDel2() {
         axios({
             method: 'delete',
-            url: `api/plan/delete/${p_id}`,
+            url: `https://w-gym-the-lion-backend.herokuapp.com/api/plan/delete/${p_id}`,
 
         });
     }

@@ -76,7 +76,7 @@ const [myMember, setMyMember] = useState({ m_id: "", name: "", weight: "", heigh
         axios({
 
             method: 'post',
-            url: 'api/member/add',
+            url: 'https://w-gym-the-lion-backend.herokuapp.com/api/member/add',
             data: newmember
 
         });
@@ -84,7 +84,7 @@ const [myMember, setMyMember] = useState({ m_id: "", name: "", weight: "", heigh
         axios({
 
             method: 'post',
-            url: 'api/user/add',
+            url: 'https://w-gym-the-lion-backend.herokuapp.com/api/user/add',
             data: newusers
 
         });   

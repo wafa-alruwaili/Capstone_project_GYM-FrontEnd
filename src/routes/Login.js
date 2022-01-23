@@ -28,7 +28,7 @@ export default function Login() {
     event.preventDefault();
     axios({
       method: "get",
-      url: "api/user/login",
+      url: "https://w-gym-the-lion-backend.herokuapp.com/api/user/login",
       params: { username: username, password: password }
     })
       .then((res => {
